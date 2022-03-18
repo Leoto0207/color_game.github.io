@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #D3d0cb;
+    font-family: "Roboto", sans-serif;
+}
+
+header h1{
+    color: #2e5266;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.colorDisplay{
+    font-size: 3rem;
+    color: #37393A;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message{
+    color: #F78e69;
+    font-size: 1rem;
+}
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+button{
+    padding: 15px 30px;
+    margin: 0 10px;
+    background: #BDD358;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px 10px;
+    max-width: 600px;
+}
+
+.box{
+    width: 30%;
+    padding: 80px;
+    background: #E5625e;
+    margin: 1.66%;
+    border-radius: 25px;
+}
+
+@media (max-width: 650px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 10px 10px;
+        margin: 20px 20px;
+    }
+    .box{
+        width: 25%;
+        padding: 60px;
+    }
+}
+
+
